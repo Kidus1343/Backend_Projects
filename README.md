@@ -21,10 +21,41 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# NestJS REST API – Authentication, Prisma, and E2E Testing
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a robust RESTful API built with [NestJS](https://nestjs.com/) and [TypeScript](https://www.typescriptlang.org/), demonstrating modern backend practices including modular architecture, authentication, PostgreSQL integration, and automated testing.
 
+It covers the full development workflow—from setting up the project and creating modules to integrating a database with Prisma and securing endpoints using JWT and Passport.js. Passwords are hashed with Argon2, and validation is handled using NestJS pipes and DTOs.
+
+The API features user authentication and bookmark management. PostgreSQL runs in Docker for easy development and isolation, while Prisma handles schema definitions, migrations, and querying. Environment variables are managed via the NestJS ConfigModule, ensuring clean separation of secrets and config values.
+
+Custom decorators and guards are used to implement secure and reusable logic for extracting user data from JWTs. End-to-end tests are written using [PactumJS](https://pactumjs.github.io/), with isolated test environments and automated database setup/teardown logic.
+
+---
+
+## 🚀 Tech Stack
+
+- **NestJS** – Progressive Node.js framework
+- **TypeScript** – Type-safe language for scalable apps
+- **PostgreSQL** – Relational database
+- **Prisma ORM** – Type-safe database client
+- **Passport.js** – Authentication middleware
+- **JWT** – JSON Web Tokens for secure auth
+- **Argon2** – Password hashing
+- **Docker** – Containerized PostgreSQL setup
+- **PactumJS** – E2E API testing
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/Kidus1343/Backend_Projects.git
+cd Backend_Projects
+
+# Install dependencies
+npm install
 ## Project setup
 
 ```bash
@@ -87,12 +118,3 @@ Check out a few resources that may come in handy when working with NestJS:
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
